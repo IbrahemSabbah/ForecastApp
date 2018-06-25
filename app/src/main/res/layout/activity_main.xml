@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="8dp"
+        android:autoSizeMaxTextSize="18sp"
+        android:autoSizeMinTextSize="13sp"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:minLines="1"
+        android:text="@string/select_region_and_country"
+        android:textColor="@color/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/layoutSelectRegion"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:background="@android:color/white"
+        android:elevation="0dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:shape_roundRect_borderColor="@android:color/black"
+        app:shape_roundRect_borderWidth="0.5dp"
+        app:shape_roundRect_bottomLeftRadius="5dp"
+        app:shape_roundRect_bottomRightRadius="5dp"
+        app:shape_roundRect_topLeftRadius="5dp"
+        app:shape_roundRect_topRightRadius="5dp">
+
+        <TextView
+            android:id="@+id/txtSelectRegion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24px"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:onClick="onClick"
+            android:text="@string/select_region" />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/layoutSelectCountry"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/layoutSelectRegion"
+        app:layout_constraintStart_toStartOf="@+id/layoutSelectRegion"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSelectRegion"
+        app:shape_roundRect_borderColor="@android:color/black"
+        app:shape_roundRect_borderWidth="0.5dp"
+        app:shape_roundRect_bottomLeftRadius="5dp"
+        app:shape_roundRect_bottomRightRadius="5dp"
+        app:shape_roundRect_topLeftRadius="5dp"
+        app:shape_roundRect_topRightRadius="5dp">
+
+        <TextView
+            android:id="@+id/txtSelectCountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:onClick="onClick"
+            android:minLines="1"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24px"
+            android:text="@string/select_country" />
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/layoutSelectArea"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/layoutSelectCountry"
+        app:layout_constraintStart_toStartOf="@+id/layoutSelectCountry"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSelectCountry"
+        app:shape_roundRect_borderColor="@android:color/black"
+        app:shape_roundRect_borderWidth="0.5dp"
+        app:shape_roundRect_bottomLeftRadius="5dp"
+        app:shape_roundRect_bottomRightRadius="5dp"
+        app:shape_roundRect_topLeftRadius="5dp"
+        app:shape_roundRect_topRightRadius="5dp">
+
+        <TextView
+            android:id="@+id/txtSelectArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24px"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:onClick="onClick"
+            android:minLines="1"
+            android:text="@string/select_area" />
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/layoutBtnFind"
+        android:layout_width="287dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/layoutSelectArea"
+        app:layout_constraintStart_toStartOf="@+id/layoutSelectArea"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSelectArea"
+        app:shape_roundRect_borderColor="@android:color/black"
+        app:shape_roundRect_borderWidth="0dp"
+        app:shape_roundRect_bottomLeftRadius="5dp"
+        app:shape_roundRect_bottomRightRadius="5dp"
+        app:shape_roundRect_topLeftRadius="5dp"
+        app:shape_roundRect_topRightRadius="5dp">
+
+        <Button
+            android:id="@+id/btnFindTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_disable"
+            android:onClick="onClick"
+            android:text="@string/btn_show_temp"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+</android.support.constraint.ConstraintLayout>

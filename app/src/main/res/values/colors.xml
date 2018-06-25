@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff9802</color>
+    <color name="colorPrimaryDark">#ff9832</color>
+    <color name="colorAccent">#039a35</color>
+
+    <color name="text">#707070</color>
+    <color name="text_orange">#ff9832</color>
+    <color name="text_green">#039a35</color>
+    <color name="button_disable">#707070</color>
+    <color name="button_active">#039a35</color>
+
+    <color name="icon">#707070</color>
+    <color name="select_cell">#64707070</color>
+    <color name="divder">#707070</color>
+
+    <color name="loading">#ff9832</color>
+    <color name="gray_background">#f7f7f7</color>
+
+    <color name="blue">#385da9</color>
+    <color name="green">#039a35</color>
+
+
+</resources>
