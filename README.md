@@ -1,6 +1,11 @@
 # WeatherApp
 WeatherApp is an Android application that helps you to get the forecast and temperature for specific locations , This app is based on the AccuWeatherAPIs Forecast.
 
+# Basic Usage
+For examples of usage, run the demo app from project files using command line :
+```ADB
+adb install weather_app.apk
+```
 # Pre-requisites 
 - Android Studio 3.2
 - Gradle Version 3.2.0-alpha16
