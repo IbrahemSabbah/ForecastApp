@@ -13,7 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
         buildConfigField("String", "BASE_URL", "\"http://dataservice.accuweather.com\"")
-        buildConfigField("String", "API_KEY", "\"qsRbeYkBGp2ihmuhab6DGhPHrkAcHhdd\"")
+        buildConfigField("String", "API_KEY", "\"O8a3wVPLBmLOqCRI4h4xpu3sfrDS0VS7\"")
 
     }
     buildTypes {
