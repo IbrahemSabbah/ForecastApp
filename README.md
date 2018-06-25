@@ -12,6 +12,8 @@ adb install weather_app.apk
 - Get ApiKey from AccuWearherAPIs by creating new application and generate the apiKey
 
 # Build and install
+Import Project into Andorid Studio.
+
 In Android Studio, click on the "Run" button.
 
 If you have everything set up correctly:
